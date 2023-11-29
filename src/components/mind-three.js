@@ -19,6 +19,7 @@ const Plane = props => {
 
 const MindThree = () => {
     const [ar,setAR] = useContext(ViewContext)
+    const [anchorText, setAnchorText] = useState('starting')
     return (
         <>
         <Suspense fallbakc={null}>
@@ -37,15 +38,19 @@ const MindThree = () => {
             </ARView>
         </Suspense>
             <div
-            style={{
-                position: 'fixed',
-                top: 10,
-                left: 10,
-                zIndex: 1001,
-                fontSize: 30
-            }}
-                onClick={() => setAR(state => ({ ...state, image: !state.image }))}
-            >change</div>
+                style={{
+                    position: 'fixed',
+                    top: 10,
+                    left: 10,
+                    zIndex: 1001,
+                    fontSize: 30
+                }}
+                    onClick={() => setAR(state => ({ ...state, image: !state.image }))}
+                >change
+                <p>
+                    {{anchorText}}
+                </p>
+            </div>
         </>
     )
 }
