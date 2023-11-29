@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, Suspense } from 'react'
 import { ARAnchor, ARView } from 'react-three-mind'
 import { useLoader } from '@react-three/fiber'
 import { ViewContext } from '@/providers/viewProvider'
@@ -21,6 +21,7 @@ const MindThree = () => {
     const [ar,setAR] = useContext(ViewContext)
     return (
         <>
+        <Suspense fallbakc={null}>
             <ARView
                 imageTargets="/targets.mind"
                 filterMinCF={1}
@@ -34,6 +35,7 @@ const MindThree = () => {
                     <Plane />
                 </ARAnchor>
             </ARView>
+        </Suspense>
             <div
             style={{
                 position: 'fixed',
