@@ -29,6 +29,8 @@ const MindThree = () => {
                 filterBeta={10000}
                 missTolerance={0}
                 warmupTolerance={0}
+                onAnchorFound={() => setAnchorText('found')}
+                onAnchorLost={() => setAnchorText('lost')}
             >
                 <ambientLight />
                 <directionalLight color="white" position={[0, 0, 5]} />
@@ -48,7 +50,7 @@ const MindThree = () => {
                     onClick={() => setAR(state => ({ ...state, image: !state.image }))}
                 >change
                 <p>
-                    {{anchorText}}
+                    {anchorText}
                 </p>
             </div>
         </>
