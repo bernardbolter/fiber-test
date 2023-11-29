@@ -34,7 +34,11 @@ const MindThree = () => {
             >
                 <ambientLight />
                 <directionalLight color="white" position={[0, 0, 5]} />
-                <ARAnchor target={0}>
+                <ARAnchor 
+                    target={0}
+                    onAnchorFound={() => setAnchorText('found')}
+                    onAnchorLost={() => setAnchorText('lost')}
+                >
                     <Plane />
                 </ARAnchor>
             </ARView>
