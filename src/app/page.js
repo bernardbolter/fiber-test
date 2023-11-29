@@ -2,7 +2,6 @@
 
 import styles from './page.module.css'
 
-import ReactThree from '@/components/react-three'
 import MindThree from '@/components/mind-three'
 
 const Home = () => {

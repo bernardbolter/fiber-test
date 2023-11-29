@@ -1,4 +1,4 @@
-import { useContext, Suspense, useState } from 'react'
+import { useContext, Suspense, useState, useRef } from 'react'
 import { ARAnchor, ARView } from 'react-three-mind'
 import { useLoader } from '@react-three/fiber'
 import { ViewContext } from '@/providers/viewProvider'
@@ -18,31 +18,34 @@ const Plane = props => {
 }
 
 const MindThree = () => {
+    const ref = useRef()
     const [ar,setAR] = useContext(ViewContext)
     const [anchorText, setAnchorText] = useState('starting')
     return (
         <>
-        <Suspense fallbakc={null}>
-            <ARView
-                imageTargets="/targets.mind"
-                filterMinCF={1}
-                filterBeta={10000}
-                missTolerance={0}
-                warmupTolerance={0}
-                onAnchorFound={() => setAnchorText('found')}
-                onAnchorLost={() => setAnchorText('lost')}
-            >
-                <ambientLight />
-                <directionalLight color="white" position={[0, 0, 5]} />
-                <ARAnchor 
-                    target={0}
+            <Suspense fallbakc={null}>
+                <ARView
+                    ref={ref}
+                    autoplay
+                    imageTargets="/targets.mind"
+                    filterMinCF={1}
+                    filterBeta={10000}
+                    missTolerance={0}
+                    warmupTolerance={0}
                     onAnchorFound={() => setAnchorText('found')}
                     onAnchorLost={() => setAnchorText('lost')}
                 >
-                    <Plane />
-                </ARAnchor>
-            </ARView>
-        </Suspense>
+                    <ambientLight />
+                    <directionalLight color="white" position={[0, 0, 5]} />
+                    <ARAnchor 
+                        target={0}
+                        onAnchorFound={() => setAnchorText('found')}
+                        onAnchorLost={() => setAnchorText('lost')}
+                    >
+                        <Plane />
+                    </ARAnchor>
+                </ARView>
+            </Suspense>
             <div
                 style={{
                     position: 'fixed',
