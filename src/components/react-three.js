@@ -1,11 +1,11 @@
 import { Suspense, useContext } from 'react'
 import { Canvas, useLoader } from '@react-three/fiber'
-import { OrbitControls, useTexture } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
 
 import { ViewContext } from '../providers/viewProvider'
 
-const ReactThree = () => {
+const ReactThree = ({ setScreen }) => {
 
     const [ar, setAR ] = useContext(ViewContext)
     console.log(ar)
@@ -29,7 +29,10 @@ const ReactThree = () => {
                 fontSize: 30
             }}
                 onClick={() => setAR(state => ({ ...state, image: !state.image }))}
-            >change</div>
+            >
+                <p>change</p>
+                <p onClick={() => setScreen('none')}>Stop</p>    
+            </div>
         </>
     )
 }

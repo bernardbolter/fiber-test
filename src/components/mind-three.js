@@ -17,7 +17,7 @@ const Plane = props => {
     )
 }
 
-const MindThree = () => {
+const MindThree = ({ setScreen }) => {
     const ref = useRef()
     const [ar,setAR] = useContext(ViewContext)
     const [anchorText, setAnchorText] = useState('starting')
@@ -32,6 +32,7 @@ const MindThree = () => {
                     filterBeta={10000}
                     missTolerance={0}
                     warmupTolerance={0}
+                    flipUserCamera={false}
                     onAnchorFound={() => setAnchorText('found')}
                     onAnchorLost={() => setAnchorText('lost')}
                 >
@@ -55,10 +56,10 @@ const MindThree = () => {
                     fontSize: 30
                 }}
                     onClick={() => setAR(state => ({ ...state, image: !state.image }))}
-                >change
-                <p>
-                    {anchorText}
-                </p>
+                >
+                <p>change</p>
+                <p>{anchorText}</p>
+                <p onClick={() => setScreen('none')}>Stop</p>
             </div>
         </>
     )

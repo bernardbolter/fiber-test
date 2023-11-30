@@ -3,4 +3,15 @@
   height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main p {
+  background: #333;
+  color: white;
+  padding: 15px;
+  margin: 15px;
 }
