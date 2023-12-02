@@ -10,8 +10,6 @@ const nextConfig = {
             pathname: '/art/**',
           },
         ],
-        loader: 'custom',
-        loaderFile: './src/providers/imageProvider.js'
       },
 }
 

@@ -5,7 +5,10 @@ export const ARContext = createContext(null)
 const ARProvider = ({ children }) => {
 
    const [ar, setAR] = useState({
-       image: 'start',
+        currentCity: {},
+        cityTextures: [],
+        currentTexture: 0,
+        firstClick: false
    })
 
    return (

@@ -3,6 +3,8 @@ import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import styles from './page.module.css'
 import ReactThree from '@/components/react-three'
+import Link from 'next/link'
+
 
 const MindThree = dynamic(
   () => import('../components/mind-three'),
@@ -16,7 +18,7 @@ const Home = () => {
       <main className={styles.main}>
 
         <p onClick={() => setScreen('three')}>Three</p>
-        <p onClick={() => setScreen('mind')}>Mind</p>
+        <Link href="/ar/deutsche-stadt">Deutsche Stadt</Link>
 
         {screen === 'mind' && <MindThree setScreen={setScreen} />}
         {screen === 'three' && <ReactThree setScreen={setScreen} />}

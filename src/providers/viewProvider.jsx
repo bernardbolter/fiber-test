@@ -5,9 +5,9 @@ export const ViewContext = createContext(null)
 const ViewProvider = ({ children }) => {
 
    const [ar, setAR] = useState({
-       image: false,
-       currentCity: {},
-       cityTextures: []
+        currentCity: {},
+        cityTextures: [],
+        currentTexture: 0
    })
 
    return (
