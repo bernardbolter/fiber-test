@@ -215,7 +215,7 @@ const ImageMap = ({ isLoading, oneImg }) => {
 
     if (ar.cityTextures.length !== 0) {
         console.log("cityText loaded")
-        const getTextures = useTexture(Barray)
+        const getTextures = useTexture(ar.cityTextures)
         console.log("in effect: ", getTextures)
     }
 
