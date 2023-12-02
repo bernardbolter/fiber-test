@@ -48,12 +48,15 @@ const ReactThree = ({ setScreen }) => {
             newTextures.push(`https://digitalcityseries.com/art/megacities/${newCity.slug}/${city.slug}/${city.slug}_sm.gif`)
         })
         // console.log(newTextures)
-        const getTextures = useTexture(Barray)
-        console.log("in effect: ", getTextures)
+        
         setAR(state => ({ ...state, currentCity: newCity, cityTextures: newTextures }))
         // const imgs = cacheImage(Barray)
         // console.log(imgs)
     },[])
+
+    
+
+
     // console.log(ar.currentCity)
 
     // const cacheImage = async (srcArray) => {
@@ -200,6 +203,21 @@ const ImageMap = ({ isLoading, oneImg }) => {
     // }, [ar.currentCity])
 
     // console/log(imageTextures)
+
+    // const gotTexts = useMemo(() => {
+    //     console.log(ar.cityTextures)
+    //     if (ar.cityTextures.length !== 0) {
+    //         console.log("cityText loaded")
+    //         const getTextures = useTexture(Barray)
+    //         console.log("in effect: ", getTextures)
+    //     }
+    // },[ar.cityTextures])
+
+    if (ar.cityTextures.length !== 0) {
+        console.log("cityText loaded")
+        const getTextures = useTexture(Barray)
+        console.log("in effect: ", getTextures)
+    }
 
     return (
             <Suspense fallback={null}>
