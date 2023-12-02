@@ -200,19 +200,13 @@ const ImageMap = ({ isLoading, oneImg }) => {
     // console/log(imageTextures)
 
     return (
-    <>
-        {isLoading ? (
-            <div></div>
-        ) : (
             <Suspense fallback={null}>
-            <mesh>
-                <planeGeometry args={[1,1.5]}/>
-                <meshStandardMaterial  transparent />
-            </mesh>
-        </Suspense>
-        )}
-    </>
-    )
+                <mesh>
+                    <planeGeometry args={[1,1.5]}/>
+                    <meshStandardMaterial map={texture} transparent />
+                </mesh>
+            </Suspense>
+        )
         
 }
 
