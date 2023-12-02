@@ -122,7 +122,7 @@ const ARNav = () => {
 
 const ImageMap = ({ isLoading, oneImg }) => {
     const [ar, setAR ] = useContext(ViewContext)
-    const textures = []
+    let textures = []
    
     if (ar.cityTextures.length !== 0) {
         console.log("cityText loaded")
