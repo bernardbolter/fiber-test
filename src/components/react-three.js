@@ -111,119 +111,32 @@ const ReactThree = ({ setScreen }) => {
     )
 }
 
-const ImageMap = ({ isLoading, oneImg }) => {
-    console.log("in Imap: ", isLoading)
-    console.log("one img: ", oneImg)
+const ARNav = () => {
     const [ar, setAR ] = useContext(ViewContext)
-    const data = [
-        {
-        name: 'america',
-        url: '/a1-america-city.jpg'
-        },
-        {
-        name: 'germany',
-        url: '/a1-deutsche-stadt.jpg'
-        }
-    ]
-    // const texture = useLoader(TextureLoader, oneImg)
-    // console.log(texture)
-    const Darray = ['/a1-america-city.jpg','/a1-deutsche-stadt.jpg']
+    return (
+        <div className="ar-nav-container">
 
-    // const textures = useTexture(ar.)
-    // console.log(texture)
+        </div>
+    )
+}
 
-
-    // const Barray = ["https://digitalcityseries.com/art/megacities/deutsche-stadt/dortmund/dortmund_sm.gif", "https://digitalcityseries.com/art/megacities/deutsche-stadt/essen/essen_sm.gif" ]
-    // const [textures, setTextures] = useState([])
-
-    // useEffect(() => {
-    //     const Newtextures = useTexture(Darray)
-    //     console.log(Newtextures)
-    // }, [])
-    // const textures = []
-
-//     useEffect(() => {
-//         data.map(async c => {
-//             var newObj = { [c.name] :  loadit(c.url) }
-//             console.log(newObj)
-//             setTextures(textures => ([...textures, newObj ]))
-//         })
-//         console.log(textures)
-//     }, [])
-
-//   const loadit = async (url) => {
-//     const loaded = await useLoader(TextureLoader, url)
-//     return loaded
-//   }
-    
-    // const imageTextures = useTexture({
-    //     germany: '/a1-deutsche-stadt.jpg',
-    //     america: '/a1-america-city.jpg'
-    // })
-    // const america = useLoader(TextureLoader, '/a1-america-city.jpg')
-    // const germany = useLoader(TextureLoader, '/a1-deutsche-stadt.jpg')
-
-    // const makeTextures = useCallback(async() => {
-    //     console.log('callback')
-    //     const Newtextures = useTexture(Darray)
-    //     // setTextures(Newtextures)
-    //     console.log(Newtextures)
-    //     // return Newtextures
-    // })
-
-    // useEffect(() => {
-    //     makeTextures()
-    // }, [makeTextures])
-    // console.log(ar.cityTextures)
-    // const textures = useLoader(TextureLoader, Barray)
-
-    
-    // console.log(textures)
-    // console.log(makeTextures)
-    // const [texts, setTexts] = useState()
-
-    // useEffect(() => {
-    //     var cityArray = [] 
-    //    if (ar.currentCity.lenth !== 0) {
-    //         // cityArray.push(`/megacities/${ar.currentCity.slug}/${ar.currentCity.slug}_sm.gif`)
-    //         ar.currentCity.cities.map(city => {
-    //             cityArray.push(`/megacities/${ar.currentCity.slug}/${city.slug}/${city.slug}_sm.gif`)
-    //         })
-    //         console.log(cityArray)
-    //         // const [one,two,three,four,five,six,seven,eight,nine] = useLoader(TextureLoader, [
-    //         const tempText = useLoader(TextureLoader, [
-    //             '/a1-america-city.jpg',
-    //             '/a1-deutsche-stadt.jpg'
-    //         ])
-    //         console.log(tempText)
-    //         // const texts = useLoader(TextureLoader, cityArray)
-    //         // // setTextures(texts)
-    //         // console.log(texts)
-    //     }
-    // }, [ar.currentCity])
-
-    // console/log(imageTextures)
-
-    // const gotTexts = useMemo(() => {
-    //     console.log(ar.cityTextures)
-    //     if (ar.cityTextures.length !== 0) {
-    //         console.log("cityText loaded")
-    //         const getTextures = useTexture(Barray)
-    //         console.log("in effect: ", getTextures)
-    //     }
-    // },[ar.cityTextures])
-
+const ImageMap = ({ isLoading, oneImg }) => {
+    const [ar, setAR ] = useContext(ViewContext)
+    const textures = []
+   
     if (ar.cityTextures.length !== 0) {
         console.log("cityText loaded")
-        const getTextures = useTexture(ar.cityTextures)
-        console.log("in effect: ", getTextures)
+        console.log(ar.cityTextures)
+        textures = useTexture(ar.cityTextures)
     }
+
+    console.log("in effect: ", textures)
 
     return (
             <Suspense fallback={null}>
                 <mesh>
                     <planeGeometry args={[1,1.5]}/>
-                    <meshStandardMaterial  transparent />
+                    <meshStandardMaterial map={textures[0]} transparent />
                 </mesh>
             </Suspense>
         )
