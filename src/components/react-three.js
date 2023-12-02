@@ -48,31 +48,33 @@ const ReactThree = ({ setScreen }) => {
             newTextures.push(`https://digitalcityseries.com/art/megacities/${newCity.slug}/${city.slug}/${city.slug}_sm.gif`)
         })
         // console.log(newTextures)
+        const getTextures = useTexture(newTextures)
+        console.log(getTextures)
         setAR(state => ({ ...state, currentCity: newCity, cityTextures: newTextures }))
         // const imgs = cacheImage(Barray)
         // console.log(imgs)
     },[])
     // console.log(ar.currentCity)
 
-    const cacheImage = async (srcArray) => {
-        const promises = await srcArray.map(src => {
-            return new Promise(function (resolve, reject) {
-                const img = new Image()
+    // const cacheImage = async (srcArray) => {
+    //     const promises = await srcArray.map(src => {
+    //         return new Promise(function (resolve, reject) {
+    //             const img = new Image()
     
-                img.src = src
-                img.onload = resolve()
-                img.onerror = reject()
-            })
-        })
+    //             img.src = src
+    //             img.onload = resolve()
+    //             img.onerror = reject()
+    //         })
+    //     })
 
-        console.log(imgs)
+    //     console.log(imgs)
     
-        await Promise.all(promises)
+    //     await Promise.all(promises)
     
-        setIsLoading(false)
-        console.log("loaded")
-        return promises
-    }
+    //     setIsLoading(false)
+    //     console.log("loaded")
+    //     return promises
+    // }
 
     return (
         <>
@@ -80,7 +82,7 @@ const ReactThree = ({ setScreen }) => {
                 <Suspense fallback={null}>
                     <ambientLight intensity={0.3} />
                     <directionalLight color="white" position={[0, 0, 5]} />
-                        <ImageMap isLoading={isLoading} oneImg={oneImg} />
+                        <ImageMap isLoading={isLoading} />
                     <OrbitControls />
                 </Suspense>
             </Canvas>
@@ -124,8 +126,8 @@ const ImageMap = ({ isLoading, oneImg }) => {
     // console.log(texture)
     const Darray = ['/a1-america-city.jpg','/a1-deutsche-stadt.jpg']
 
-    const texture = useTexture(Barray)
-    console.log(texture)
+    // const textures = useTexture(ar.)
+    // console.log(texture)
 
 
     // const Barray = ["https://digitalcityseries.com/art/megacities/deutsche-stadt/dortmund/dortmund_sm.gif", "https://digitalcityseries.com/art/megacities/deutsche-stadt/essen/essen_sm.gif" ]
