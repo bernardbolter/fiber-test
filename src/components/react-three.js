@@ -203,7 +203,7 @@ const ImageMap = ({ isLoading, oneImg }) => {
             <Suspense fallback={null}>
                 <mesh>
                     <planeGeometry args={[1,1.5]}/>
-                    <meshStandardMaterial map={texture} transparent />
+                    <meshStandardMaterial  transparent />
                 </mesh>
             </Suspense>
         )
