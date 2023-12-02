@@ -11,7 +11,7 @@
   "dependencies": {
     "@react-three/fiber": "^8.15.11",
     "@types/three": "^0.158.3",
-    "next": "14.0.3",
+    "next": "^14.0.1",
     "react": "^18",
     "react-dom": "^18",
     "react-three-mind": "^0.2.1",

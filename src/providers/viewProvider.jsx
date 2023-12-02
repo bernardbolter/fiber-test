@@ -6,6 +6,8 @@ const ViewProvider = ({ children }) => {
 
    const [ar, setAR] = useState({
        image: false,
+       currentCity: {},
+       cityTextures: []
    })
 
    return (

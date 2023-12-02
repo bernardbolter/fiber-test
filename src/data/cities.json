@@ -1,0 +1,89 @@
+[
+    { "name" : "Deutsche Stadt",
+      "slug" : "deutsche-stadt",
+      "country" : "Germany",
+      "flag" : "de.png",
+      "type" : "megacity",
+      "year" : "2020",
+      "completed" : true,
+      "a1print" : true,
+      "cities" : [
+        {
+          "name" : "Berlin",
+          "population" : "3,520,031",
+          "slug" : "berlin",
+          "video" : "https://www.youtube.com/watch?v=OEOqVNkISTk",
+          "artist" : "Bushido, Kay One, Fler",
+          "title" : "Berlins Most Wanted"
+        },
+        {
+          "name" : "Hamburg",
+          "population" : "1,787,408",
+          "slug" : "hamburg",
+          "video" : "https://www.youtube.com/watch?v=VJ95MMHSMtQ",
+          "artist" : "Samy Deluxe",
+          "title" : "Hamburg"
+        },
+        {
+          "name" : "München",
+          "englishName" : "Munich",
+          "population" : "1,450,381",
+          "slug" : "munich",
+          "video" : "https://www.youtube.com/watch?v=6trL0cvP9gs",
+          "artist" : "Johnny Suicide ft Munich Allstars",
+          "title" : "Muunchen is King"
+        },
+        {
+          "name" : "Köln",
+          "englishName" : "Cologne",
+          "population" : "1,060,582",
+          "slug" : "cologne",
+          "video" : "https://www.youtube.com/watch?v=x65_s8T1SGQ",
+          "artist" : "Mo-Torres, Cat Ballou & Lukas Podolski",
+          "title" : "Liebe deine Stadt"
+        },
+        {
+          "name" : "Frankfurt am Main",
+          "englishName" : "Frankfurt",
+          "population" : "732,688",
+          "slug" : "frankfurt-am-main",
+          "video" : "https://www.youtube.com/watch?v=qgfHJBpbGLQ",
+          "artist" : "Born",
+          "title" : "So Frankfurt"
+        },
+        {
+          "name" : "Stuttgart",
+          "population" : "623,738",
+          "slug" : "stuttgart",
+          "video" : "https://www.youtube.com/watch?v=UvGrUxA5hFk",
+          "artist" : "Stadtlichters",
+          "title" : "Mein Stuggi"
+        },
+        {
+          "name" : "Düsseldorf",
+          "englishName" : "Dusseldorf",
+          "population" : "612,178",
+          "slug" : "dusseldorf",
+          "video" : "https://www.youtube.com/watch?v=orsT9kTmvLs",
+          "artist" : "Farid Bang",
+          "title" : "Ich bin Düsseldorf"
+        },
+        {
+          "name" : "Dortmund",
+          "population" : "586,181",
+          "slug" : "dortmund",
+          "video" : "https://www.youtube.com/watch?v=PD9UJejC_W0",
+          "artist" : "Reece",
+          "title" : "Dortmund meine Stadt"
+        },
+        {
+          "name" : "Essen",
+          "population" : "582,624",
+          "slug" : "essen",
+          "video" : "https://www.youtube.com/watch?v=evJ6mpqLfk8",
+          "artist" : "Sinan G",
+          "title" : "Mit Essen spielt man nicht"
+        }
+      ]
+    }
+]
