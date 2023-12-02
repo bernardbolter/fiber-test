@@ -1,4 +1,4 @@
-import { Suspense, useContext, useEffect } from 'react'
+import { Suspense, useContext, useEffect, useState } from 'react'
 import { Canvas, useLoader } from '@react-three/fiber'
 import { OrbitControls, useTexture } from '@react-three/drei'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
@@ -10,6 +10,7 @@ import ARinfo from './ar/ar-info'
 
 import cities from '../data/cities'
 const Barray = ['/a1-america-city.jpg', '/a1-deutsche-stadt.jpg']
+const Larray = [ "https://digitalcityseries.com/art/megacities/deutsche-stadt/berlin/berlin_sm.gif", "https://digitalcityseries.com/art/megacities/deutsche-stadt/hamburg/hamburg_sm.gif"]
 
 const ReactThree = ({ setScreen }) => {
     var slug = 'deutsche-stadt'
@@ -46,15 +47,25 @@ const ReactThree = ({ setScreen }) => {
 
 const ImageMap = () => {
     const [ar, setAR ] = useContext(ARContext)
-    // console.log(ar.currentTexture)
+    const [texturesLoaded, setTexturesLoaded] = useState(false)
+    // console.log(ar.cityTextures)
     let textures = []
-   
-    if ((ar.cityTextures.length !== 0) && (textures.length === 0))  {
-        // console.log("cityText loaded")
-        // console.log(ar.cityTextures)
-        textures = useTexture(ar.cityTextures)
+    console.log(" t load: ", texturesLoaded)
+    if ((ar.cityTextures.length !== 0) && (texturesLoaded === false)) {
+        console.log("cityText loaded")
+        console.log(Larray)
+        textures = useTexture(Larray)
+        
         // textures = useLoader(TextureLoader, Barray)
     }
+
+    useEffect(() => {
+        console.log("out t")
+        if (ar.cityTextures.length !== 0) {
+            console.log(" in t")
+            setTexturesLoaded(true)
+        }
+    }, [ar.cityTextures])
 
     // console.log("in effect: ", textures)
 
