@@ -17,7 +17,7 @@ const ARnav = () => {
         } else {
             setViewScrollRight(false)
         }
-        if (scrollRef.current.scrollLeft === scrollRef.current.scrollLeftMax) {
+        if (scrollRef.current.scrollLeft > scrollRef.current.scrollLeftMax - 30) {
             setViewScrollLeft(false)
         } else {
             setViewScrollLeft(true)
