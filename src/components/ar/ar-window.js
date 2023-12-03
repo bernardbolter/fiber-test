@@ -23,7 +23,7 @@ const ARwindow = () => {
                     warmupTolerance={0}
                     flipUserCamera={false}
                 >
-                    <ambientLight intensity={.2} />
+                    <ambientLight intensity={.1} />
                     <directionalLight color="white" position={[0, 0, 5]} />
                     <ARAnchor
                         target={0}
@@ -59,6 +59,7 @@ const ImageMap = () => {
                         map={!ar.firstClick ? startTexture : ar.viewingOverlay ? textures[ar.currentTexture] : transparentTexture }
                         transparent
                         flatShading
+                        color={0xdddddd}
                     />
                 </mesh>
             </Suspense>
