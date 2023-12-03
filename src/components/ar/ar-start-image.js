@@ -9,8 +9,8 @@ const ARstartImage = ({imageSrc}) => {
             <div 
                 className="art-start-image-box"
                 style={{ 
-                    width: size.width < 600 ? size.width * .7 : size.width * .6, 
-                    height: size.width < 600 ? (size.width * .7) * 1.398 : (size.width * .6) * 1.398
+                    width: size.width < 600 ? size.width * .6 : size.width * .5, 
+                    height: size.width < 600 ? (size.width * .6) * 1.398 : (size.width * .6) * 1.398
                 }}    
             >
                 <div className="art-start-line" />

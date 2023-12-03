@@ -17,8 +17,8 @@ const ARwindow = () => {
                 <ARView
                     ref={arRef}
                     autoplay
-                    imageTargets={`https://digitalcityseries.com/art/megacities/${ar.currentCity.slug}/${ar.currentCity.slug}.mind`}
-                    // imageTargets="../../../targets.mind"
+                    // imageTargets={`https://digitalcityseries.com/art/megacities/${ar.currentCity.slug}/${ar.currentCity.slug}.mind`}
+                    imageTargets={`../../../${ar.currentCity.slug}.mind`}
                     filterMinCF={1}
                     filterBeta={1000}
                     missTolerance={0}
