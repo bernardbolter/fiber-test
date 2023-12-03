@@ -287,14 +287,11 @@
     left: 0;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .art-start-image-box {
     position: relative;
-    margin-bottom: 44%;
+    margin: 150px auto 0 auto;
 
     img {
         opacity: .5;
