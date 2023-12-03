@@ -10,8 +10,6 @@ const ARnav = () => {
     const scrollRef = useRef()
     const [viewScrollLeft, setViewScrollLeft] = useState(true)
     const [viewScrollRight, setViewScrollRight] = useState(false)
-    console.log("v: ", ar.viewingOverlay)
-    console.log("f: ", ar.firstClick)
     
     const ScrollEvent = () => {
         if (scrollRef.current.scrollLeft > 0) {

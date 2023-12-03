@@ -293,6 +293,7 @@
 
 .art-start-image-box {
     position: relative;
+    margin-bottom: 50%;
 
     img {
         opacity: .5;
@@ -302,7 +303,7 @@
 
 .art-start-line {
     width: 100%;
-    height: 7px;
+    height: 3px;
     background: white;
     position: absolute;
     z-index: 1004;

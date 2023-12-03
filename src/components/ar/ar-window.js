@@ -13,13 +13,13 @@ const ARwindow = () => {
 
     return (
         <>
-            <Suspense fallback={<ARloading />}>
+            <Suspense fallback={null}>
                 <ARView
                     ref={arRef}
                     autoplay
                     // imageTargets={`https://digitalcityseries.com/art/megacities/${ar.currentCity.slug}/${ar.currentCity.slug}.mind`}
                     imageTargets={`../../../${ar.currentCity.slug}.mind`}
-                    filterMinCF={1}
+                    filterMinCF={0.1}
                     filterBeta={1000}
                     missTolerance={0}
                     warmupTolerance={0}
@@ -59,9 +59,10 @@ const ImageMap = () => {
                 <mesh>
                     <planeGeometry args={[1,1.4]}/>
                     <meshStandardMaterial 
-                        map={!ar.firstClick ? startTexture : ar.viewingOverlay ? textures[ar.currentTexture] : '' }
+                        map={!ar.firstClick ? startTexture : ar.viewingOverlay ? textures[ar.currentTexture] : null }
                         // map={textures[ar.currentTexture]} 
-                        transparent 
+                        transparent
+                        flatShading
                     />
                 </mesh>
             </Suspense>
