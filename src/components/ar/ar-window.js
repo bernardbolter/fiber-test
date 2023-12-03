@@ -59,7 +59,6 @@ const ImageMap = () => {
                         map={!ar.firstClick ? startTexture : ar.viewingOverlay ? textures[ar.currentTexture] : transparentTexture }
                         transparent
                         flatShading
-                        color={0xdddddd}
                     />
                 </mesh>
             </Suspense>
