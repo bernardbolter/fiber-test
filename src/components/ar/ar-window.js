@@ -3,8 +3,6 @@ import { ARContext } from '@/providers/arProvider'
 import { ARAnchor, ARView } from 'react-three-mind'
 import { useTexture, Loader } from '@react-three/drei'
 
-import ARloading from '@/components/ar/ar-loading'
-
 const Barray = ['/a1-america-city.jpg', '/a1-deutsche-stadt.jpg']
   
 const ARwindow = () => {
@@ -25,7 +23,7 @@ const ARwindow = () => {
                     warmupTolerance={0}
                     flipUserCamera={false}
                 >
-                    <ambientLight />
+                    <ambientLight intensity={.2} />
                     <directionalLight color="white" position={[0, 0, 5]} />
                     <ARAnchor
                         target={0}
@@ -43,6 +41,7 @@ const ARwindow = () => {
 const ImageMap = () => {
     const [ar, setAR ] = useContext(ARContext)
     const startTexture = useTexture('/ar_start_city.png')
+    const transparentTexture = useTexture('/transparent.png')
     let textures = []
    
     if ((ar.cityTextures.length !== 0) && (textures.length === 0))  {
@@ -52,15 +51,12 @@ const ImageMap = () => {
         // textures = useTexture(Barray)
     }
 
-    // console.log("in effect: ", textures)
-
     return (
             <Suspense fallback={null}>
                 <mesh>
                     <planeGeometry args={[1,1.4]}/>
                     <meshStandardMaterial 
-                        map={!ar.firstClick ? startTexture : ar.viewingOverlay ? textures[ar.currentTexture] : null }
-                        // map={textures[ar.currentTexture]} 
+                        map={!ar.firstClick ? startTexture : ar.viewingOverlay ? textures[ar.currentTexture] : transparentTexture }
                         transparent
                         flatShading
                     />

@@ -31,15 +31,15 @@ const ReactThree = ({ setScreen }) => {
         <>
             <Canvas>
                 <Suspense fallback={null}>
-                    <ambientLight intensity={0.3} />
+                    <ambientLight intensity={.2} />
                     <directionalLight color="white" position={[0, 0, 5]} />
                         <ImageMap />
                     <OrbitControls />
                 </Suspense>
             </Canvas>
-            <ARlogo setScreen={setScreen} />
+            {/* <ARlogo setScreen={setScreen} />
             {ar.firstClick && <ARinfo />}
-            <ARnav />
+            <ARnav /> */}
         </>
     )
 }
@@ -48,7 +48,7 @@ const ReactThree = ({ setScreen }) => {
 const ImageMap = () => {
     const [ar, setAR ] = useContext(ARContext)
     const [texturesLoaded, setTexturesLoaded] = useState(false)
-    console.log(ar.cityTextures)
+    // console.log(ar.cityTextures)
     let textures = []
     let ber
     let ham
@@ -56,19 +56,17 @@ const ImageMap = () => {
     console.log(" t load: ", texturesLoaded)
     if ((ar.cityTextures.length !== 0) && (texturesLoaded === false)) {
         console.log("cityText loaded")
-        console.log(Larray)
+        // console.log(Larray)
         // textures = useTexture(Larray)
-        console.log(useLoader)
 
 
-        var textureLoader = new TextureLoader;
-        textureLoader.crossOrigin = null 
         // col = useLoader(TextureLoader, Larray)
-        ber = useLoader(TextureLoader, 'https://digitalcityseries.com/art/megacities/deutsche-stadt/berlin/berlin_sm.gif')
+        ber = useLoader(TextureLoader, './megacities/deutsche-stadt/hamburg/hamburg_sm.gif')
+        console.log(ber)
         // ham = useLoader(TextureLoader, 'https://digitalcityseries.com/art/megacities/deutsche-stadt/hamburg/hamburg_sm.gif')
         // // textures = useLoader(TextureLoader, Larray)
         // console.log(text)
-        console.log(textures)
+        // console.log(textures)
         // textures = useLoader(TextureLoader, Barray)
     }
 
@@ -88,7 +86,12 @@ const ImageMap = () => {
             <Suspense fallback={null}>
                 <mesh>
                     <planeGeometry args={[1,1.5]}/>
-                    <meshStandardMaterial map={ber} transparent />
+                    <meshStandardMaterial 
+                        map={ber} 
+                        transparent
+                        flatShading
+                        color={0xdddddd}
+                    />
                 </mesh>
             </Suspense>
         )
