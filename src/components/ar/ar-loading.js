@@ -1,8 +1,11 @@
+import {Html,  useProgress } from '@react-three/drei'
+
 const ARloading = () => {
+    const { active, progress, errors, item, loaded, total } = useProgress()
+    console.log(active, progress, errors, item, loaded, total)
+    console.log("loading")
     return (
-        <div className="ar-loading-container">
-            <h1>Loading AR...</h1>
-        </div>
+        <Html center>{progress} % loaded</Html>
     )
 }
 

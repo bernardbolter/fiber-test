@@ -1,14 +1,17 @@
 "use client"
 
-import { useEffect, useContext } from 'react'
+import { useEffect, useContext, useState, Suspense } from 'react'
 import dynamic from 'next/dynamic'
 
 import { ARContext } from '@/providers/arProvider'
 import ARlogo from '@/components/ar/ar-logo'
 import ARnav from '@/components/ar/ar-nav'
 import ARinfo from '@/components/ar/ar-info'
+import ARstartImage from '@/components/ar/ar-start-image'
 
 import cities from '../../../data/cities.json'
+
+import '../../../style/ar.scss'
 
 const ARwindow = dynamic(
     () => import('../../../components/ar/ar-window'),
@@ -17,10 +20,12 @@ const ARwindow = dynamic(
 
 const ARcity = props => {
     const [ar, setAR] = useContext(ARContext)
+    const [startImage, setStartImage] = useState('')
     
     useEffect(() => {
         const selectMegacity = cities.find(city => city.slug === props.params.slug)
         const selectTextures = []
+        setStartImage(`https://digitalcityseries.com/art/megacities/${selectMegacity.slug}/${selectMegacity.slug}_sm.jpg`)
         selectMegacity.cities.map(city => {
             selectTextures.push(`https://digitalcityseries.com/art/megacities/${selectMegacity.slug}/${city.slug}/${city.slug}_sm.gif`)
         })
@@ -33,6 +38,7 @@ const ARcity = props => {
             <ARlogo />
             {ar.firstClick && <ARinfo />}
             <ARnav />
+            {ar.showStartImage && startImage.length !==0 && <ARstartImage imageSrc={startImage}/>}
         </div>
     )
 }

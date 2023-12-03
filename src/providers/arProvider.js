@@ -8,7 +8,9 @@ const ARProvider = ({ children }) => {
         currentCity: {},
         cityTextures: [],
         currentTexture: 0,
-        firstClick: false
+        firstClick: false,
+        showStartImage: true,
+        viewingOverlay: true
    })
 
    return (

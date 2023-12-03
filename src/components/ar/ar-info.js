@@ -10,9 +10,11 @@ const ARinfo = () => {
 
     return (
         <div className="ar-info-container">
-            <h1>{ar.currentCity.cities[ar.currentTexture].name}</h1>
-            <p>population:</p>
-            <h2>{ar.currentCity.cities[ar.currentTexture].population}</h2>
+            <div className="ar-info-text">
+                <h1>{ar.currentCity.cities[ar.currentTexture].name}</h1>
+                <p>population:</p>
+                <h2>{ar.currentCity.cities[ar.currentTexture].population}</h2>
+            </div>
             <div 
                 className="ar-info-video"
                 onClick={() => setVideoOpen(true)}

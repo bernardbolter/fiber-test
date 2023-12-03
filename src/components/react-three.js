@@ -48,21 +48,36 @@ const ReactThree = ({ setScreen }) => {
 const ImageMap = () => {
     const [ar, setAR ] = useContext(ARContext)
     const [texturesLoaded, setTexturesLoaded] = useState(false)
-    // console.log(ar.cityTextures)
+    console.log(ar.cityTextures)
     let textures = []
+    let ber
+    let ham
+    let col
     console.log(" t load: ", texturesLoaded)
     if ((ar.cityTextures.length !== 0) && (texturesLoaded === false)) {
         console.log("cityText loaded")
         console.log(Larray)
-        textures = useTexture(Larray)
-        
+        // textures = useTexture(Larray)
+        console.log(useLoader)
+
+
+        var textureLoader = new TextureLoader;
+        textureLoader.crossOrigin = null 
+        // col = useLoader(TextureLoader, Larray)
+        ber = useLoader(TextureLoader, 'https://digitalcityseries.com/art/megacities/deutsche-stadt/berlin/berlin_sm.gif')
+        // ham = useLoader(TextureLoader, 'https://digitalcityseries.com/art/megacities/deutsche-stadt/hamburg/hamburg_sm.gif')
+        // // textures = useLoader(TextureLoader, Larray)
+        // console.log(text)
+        console.log(textures)
         // textures = useLoader(TextureLoader, Barray)
     }
+
+    // const testText = useLoader(TextureLoader, 'https://digitalcityseries.com/art/megacities/deutsche-stadt/berlin/berlin_sm.gif')
 
     useEffect(() => {
         console.log("out t")
         if (ar.cityTextures.length !== 0) {
-            console.log(" in t")
+            console.log("https://digitalcityseries.com/art/megacities/deutsche-stadt/berlin/berlin_sm.gif")
             setTexturesLoaded(true)
         }
     }, [ar.cityTextures])
@@ -73,7 +88,7 @@ const ImageMap = () => {
             <Suspense fallback={null}>
                 <mesh>
                     <planeGeometry args={[1,1.5]}/>
-                    <meshStandardMaterial map={textures[ar.currentTexture]} transparent />
+                    <meshStandardMaterial map={ber} transparent />
                 </mesh>
             </Suspense>
         )

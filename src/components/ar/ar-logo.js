@@ -1,4 +1,4 @@
-import Arrow from "@/svg/Arrow"
+import ScrollArrow from "@/svg/ScrollArrow"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -6,7 +6,7 @@ const ARlogo = () => {
     return (
         <Link href="/" className="ar-logo-container">
             <div className="ar-logo-back">
-                <Arrow />
+                <ScrollArrow />
             </div>
             <Image
                 src="/mega_logo_transparent.png"
