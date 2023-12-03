@@ -1,5 +1,6 @@
 import { useContext , useRef, useState } from 'react'
 import { ARContext } from '@/providers/arProvider'
+import { useWindowSize } from '@/helpers/useWindowSize'
 import Image from 'next/image'
 import EyeClosed from '@/svg/EyeClosed'
 import EyeOpen from '@/svg/EyeOpen'
@@ -10,6 +11,7 @@ const ARnav = () => {
     const scrollRef = useRef()
     const [viewScrollLeft, setViewScrollLeft] = useState(true)
     const [viewScrollRight, setViewScrollRight] = useState(false)
+    const size = useWindowSize()
     
     const ScrollEvent = () => {
         if (scrollRef.current.scrollLeft > 0) {
@@ -17,7 +19,7 @@ const ARnav = () => {
         } else {
             setViewScrollRight(false)
         }
-        if (scrollRef.current.scrollLeft > scrollRef.current.scrollLeftMax - 100) {
+        if (scrollRef.current.scrollLeft > size.width) {
             setViewScrollLeft(false)
         } else {
             setViewScrollLeft(true)
