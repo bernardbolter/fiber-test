@@ -12,8 +12,18 @@ const ARinfo = () => {
         <div className="ar-info-container">
             <div className="ar-info-text">
                 <h1>{ar.currentCity.cities[ar.currentTexture].name}</h1>
-                <p>population:</p>
-                <h2>{ar.currentCity.cities[ar.currentTexture].population}</h2>
+                {ar.currentCity.type === 'megacity' ? (
+                    <>
+                        <p>population:</p>
+                        <h2>{ar.currentCity.cities[ar.currentTexture].population}</h2>
+                    </>
+                ) : (
+                    <>
+                        <h3>{ar.currentCity.cities[ar.currentTexture].city}</h3>
+                        <h3>{ar.currentCity.cities[ar.currentTexture].state}</h3>
+                    </>
+                )}
+                
             </div>
             <div 
                 className="ar-info-video"

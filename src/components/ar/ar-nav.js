@@ -26,6 +26,8 @@ const ARnav = () => {
         }
     }
 
+    console.log(ar.cityTextures)
+
     return (
         <div className="ar-nav-container-outer">
             {ar.cityTextures.length !== 0  ? (
