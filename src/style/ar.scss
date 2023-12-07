@@ -44,8 +44,8 @@
     align-items: center;
     overflow: scroll;
     position: relative;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    // -ms-overflow-style: none;
+    // scrollbar-width: none;
     padding-right: 14px;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .ar-nav-inner::-webkit-scrollbar {
-    display: none;
+    // display: none;
 }
 
 .ar-button {

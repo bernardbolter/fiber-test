@@ -110,8 +110,8 @@
               "city" : "Los Angeles",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=1qWlPt9_ZNQ",
-              "artist" : "",
-              "title" : "Skating a ditch in LA with AVE, Stefan Janoski & friends"
+              "artist" : "AVE, Stefan Janoski & friends",
+              "title" : "Skating a ditch in LA"
             },
             {
               "name" : "Alex Road Skatepark",
@@ -128,7 +128,7 @@
               "city" : "Carlsbad",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=XatdnDqm7cY",
-              "artist" : "",
+              "artist" : "Wes Kramer",
               "title" : "Carlsbad Alga Norte Park Hard Luck - TransWorld SKATEboarding"
             },
             {
@@ -210,12 +210,12 @@
               "slug" : "china-banks",
               "city" : "San Francisco",
               "state" : "CA",
-              "video" : "https://www.youtube.com/watch?v=3sb-vwbw5H0",
-              "artist" : "Jack Fardell",
-              "title" : "Behind The Cover: Jack Fardell - TransWorld SKATEboarding"
+              "video" : "https://www.youtube.com/watch?v=2LBv3XFwHG4",
+              "artist" : "",
+              "title" : "The Story of China Banks"
             },
             {
-              "name" : "City of Coronado Skatepark",
+              "name" : "Coronado Skatepark",
               "slug" : "city-of-coronado-skatepark",
               "city" : "Coronado",
               "state" : "CA",
@@ -275,8 +275,8 @@
               "city" : "Vista",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=wlL4NPOrYck",
-              "artist" : "",
-              "title" : "Classics: Bob Burnquist's 'Dreamland' Part"
+              "artist" : "Bob Burnquist",
+              "title" : "Classics: 'Dreamland' Part"
             },
             {
               "name" : "El Toro",
@@ -284,7 +284,7 @@
               "city" : "Lake Forest",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=Ofhz8VgQ6Ho",
-              "artist" : "",
+              "artist" : "Jamie Foy",
               "title" : "My War: Jamie Foy"
             },
             {
@@ -293,17 +293,17 @@
               "city" : "Vista",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=tvzMjE28E1g",
-              "artist" : "",
-              "title" : "BIRDHOUSE | SKATE AND CREATE 2020 | ELLIOT SLOAN"
+              "artist" : "ELLIOT SLOAN",
+              "title" : "BIRDHOUSE | SKATE AND CREATE 2020"
             },
             {
               "name" : "EMB",
               "slug" : "emb",
               "city" : "San Francisco",
               "state" : "CA",
-              "video" : "https://www.youtube.com/watch?v=QOxBFS60rcM",
-              "artist" : "",
-              "title" : "James Kelch : The REAL Video '93"
+              "video" : "https://www.youtube.com/watch?v=WNcTUT8khnI",
+              "artist" : "James Kelch",
+              "title" : "The REAL Video '93"
             },
             {
               "name" : "Encinitas YMCA Skatepark",

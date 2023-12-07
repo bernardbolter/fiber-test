@@ -47,7 +47,7 @@ const ImageMap = () => {
     if ((ar.cityTextures.length !== 0) && (textures.length === 0))  {
         console.log("cityText loaded")
         // console.log(ar.cityTextures)
-        textures = useTexture(ar.cityTextures)
+        // textures = useTexture(ar.cityTextures)
         // textures = useTexture(Barray)
     }
 
