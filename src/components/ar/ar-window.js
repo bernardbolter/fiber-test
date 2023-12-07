@@ -2,8 +2,6 @@ import { useRef, Suspense, useContext } from 'react'
 import { ARContext } from '@/providers/arProvider'
 import { ARAnchor, ARView } from 'react-three-mind'
 import { useTexture, Loader } from '@react-three/drei'
-
-const Barray = ['/a1-america-city.jpg', '/a1-deutsche-stadt.jpg']
   
 const ARwindow = () => {
     const arRef = useRef()
@@ -15,7 +13,6 @@ const ARwindow = () => {
                 <ARView
                     ref={arRef}
                     autoplay
-                    // imageTargets={`https://digitalcityseries.com/art/megacities/${ar.currentCity.slug}/${ar.currentCity.slug}.mind`}
                     imageTargets={`../../../${ar.currentCity.slug}.mind`}
                     filterMinCF={0.1}
                     filterBeta={1000}
@@ -47,7 +44,7 @@ const ImageMap = () => {
     if ((ar.cityTextures.length !== 0) && (textures.length === 0))  {
         console.log("cityText loaded")
         // console.log(ar.cityTextures)
-        // textures = useTexture(ar.cityTextures)
+        textures = useTexture(ar.cityTextures)
         // textures = useTexture(Barray)
     }
 

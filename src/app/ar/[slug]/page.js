@@ -45,7 +45,7 @@ const ARcity = props => {
             {ar.firstClick && <ARinfo />}
             <ARnav />
             {ar.currentCity.type === 'skateboarding' && <ARskateNav />}
-            {/* {ar.showStartImage && startImage.length !==0 && <ARstartImage imageSrc={startImage}/>} */}
+            {ar.showStartImage && startImage.length !==0 && <ARstartImage imageSrc={startImage}/>}
         </div>
     )
 }
