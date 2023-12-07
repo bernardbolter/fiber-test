@@ -14,8 +14,8 @@ const ARwindow = () => {
                     ref={arRef}
                     autoplay
                     imageTargets={`../../../${ar.currentCity.slug}.mind`}
-                    filterMinCF={0.1}
-                    filterBeta={1000}
+                    filterMinCF={0.0001}
+                    filterBeta={0.001}
                     missTolerance={0}
                     warmupTolerance={0}
                     flipUserCamera={false}
