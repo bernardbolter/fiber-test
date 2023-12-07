@@ -102,7 +102,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=NMSAQqpiA3A",
               "artist" : "Karl Watson",
-              "title" : "411 - Spot Check"
+              "title" : "411 - Spot Check",
+              "terrain" : "street"
             },
             {
               "name" : "605 Ditch",
@@ -111,7 +112,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=1qWlPt9_ZNQ",
               "artist" : "AVE, Stefan Janoski & friends",
-              "title" : "Skating a ditch in LA"
+              "title" : "Skating a ditch in LA",
+              "terrain" : "street"
             },
             {
               "name" : "Alex Road Skatepark",
@@ -120,7 +122,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=hWzKs3E4qfw",
               "artist" : "Alex Sorgente",
-              "title" : "Alex Sorgente at Alex Road Skatepark- Killing it."
+              "title" : "Killing it.",
+              "terrain" : "park"
             },
             {
               "name" : "Alga Norte Skatepark",
@@ -129,7 +132,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=XatdnDqm7cY",
               "artist" : "Wes Kramer",
-              "title" : "Carlsbad Alga Norte Park Hard Luck - TransWorld SKATEboarding"
+              "title" : "Carlsbad Alga Norte Park Hard Luck - TransWorld SKATEboarding",
+              "terrain" : "park"
             },
             {
               "name" : "Armory",
@@ -138,7 +142,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=sksDD9AnWMc",
               "artist" : "Dennis Busenitz",
-              "title" : "Best of Busenitz : 3 up & 3rd"
+              "title" : "3 up & 3rd",
+              "terrain" : "street"
             },
             {
               "name" : "Black Hubba",
@@ -146,8 +151,9 @@
               "city" : "New York City",
               "state" : "NY",
               "video" : "https://www.youtube.com/watch?v=zsNlOcIqPLU",
-              "artist" : "",
-              "title" : "JENKEM - Evolution of... NYC's Black Hubba"
+              "artist" : "JENKEM",
+              "title" : "Evolution of... NYC's Black Hubba",
+              "terrain" : "street"
             },
             {
               "name" : "Black Rock",
@@ -155,8 +161,9 @@
               "city" : "San Francisco",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=PLjX5T8AFao",
-              "artist" : "",
-              "title" : "Chico Brenes' 7x7 Part",
+              "artist" : "Chico Brenes",
+              "title" : "7x7 Part",
+              "terrain" : "street",
               "start" : 285
             },
             {
@@ -165,8 +172,9 @@
               "city" : "New York City",
               "state" : "NY",
               "video" : "https://www.youtube.com/watch?v=_GCNA4-lF1I",
-              "artist" : "",
-              "title" : "Brooklyn Banks, A Retrospective Video, by R.B. Umali"
+              "artist" : "R.B. Umali",
+              "title" : "Brooklyn Banks, A Retrospective Video",
+              "terrain" : "street"
             },
             {
               "name" : "Burgess Skatepark",
@@ -174,8 +182,9 @@
               "city" : "Menlo Park",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=7an7kAv4R4Y",
-              "artist" : "",
-              "title" : "enjoi skateboards - Menlo Park"
+              "artist" : "Enjoi Skateboards",
+              "title" : "Menlo Park",
+              "terrain" : "park"
             },
             {
               "name" : "Burnside",
@@ -184,7 +193,8 @@
               "state" : "OR",
               "video" : "https://www.youtube.com/watch?v=rfXROiJUwzE",
               "artist" : "",
-              "title" : "Burnside 4 Life: 30 Years Under The Bridge Video"
+              "title" : "Burnside 4 Life: 30 Years Under The Bridge Video",
+              "terrain" : "park"
             },
             {
               "name" : "Cathedral",
@@ -193,7 +203,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=0auU97ELR2A",
               "artist" : "Daan Van Der Linden",
-              "title" : "Daan Van Der Linden : Arson Dept",
+              "title" : "Arson Dept",
+              "terrain" : "park",
               "start" : 111
             },
             {
@@ -202,8 +213,9 @@
               "city" : "Chandler",
               "state" : "AZ",
               "video" : "https://www.youtube.com/watch?v=y-oyt6PMq74",
-              "artist" : "",
-              "title" : "411VM 45 Spot Check- Chandler Skatepark"
+              "artist" : "411VM 45 Spot Check",
+              "title" : "Chandler Skatepark",
+              "terrain" : "park"
             },
             {
               "name" : "China Banks",
@@ -211,8 +223,9 @@
               "city" : "San Francisco",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=2LBv3XFwHG4",
-              "artist" : "",
-              "title" : "The Story of China Banks"
+              "artist" : "Thrasher",
+              "title" : "The Story of China Banks",
+              "terrain" : "street"
             },
             {
               "name" : "Coronado Skatepark",
@@ -220,8 +233,9 @@
               "city" : "Coronado",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=srJvHEQt-bg",
-              "artist" : "",
-              "title" : "Jimmy Carlin, Windsor James, David Gravette & More Shred Coronado"
+              "artist" : "Jimmy Carlin, Windsor James, David Gravette & More",
+              "title" : "Shred Coronado",
+              "terrain" : "park"
             },
             {
               "name" : "Clipper",
@@ -229,8 +243,9 @@
               "city" : "San Francisco",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=rHoGc3lrLU0",
-              "artist" : "",
-              "title" : "Bust Or Bail 2: The Ripper At Clipper"
+              "artist" : "Bust Or Bail 2:",
+              "title" : "The Ripper At Clipper",
+              "terrain" : "street"
             },
             {
               "name" : "Dave Armstrong Extreme",
@@ -238,8 +253,9 @@
               "city" : "Luisville",
               "state" : "KY",
               "video" : "https://www.youtube.com/watch?v=3LFzYN6BkYA",
-              "artist" : "",
-              "title" : "In Transition - Sam Beckett"
+              "artist" : "Sam Beckett",
+              "title" : "In Transition",
+              "terrain" : "park"
             },
             {
               "name" : "Derby",
@@ -247,8 +263,9 @@
               "city" : "Santa Cruz",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=yfQscUEAUHQ",
-              "artist" : "",
+              "artist" : "Santa Cruz",
               "title" : "Streets on Fire",
+              "terrain" : "street",
               "start" : 120
             },
             {
@@ -257,8 +274,9 @@
               "city" : "Las Vegas",
               "state" : "NV",
               "video" : "https://www.youtube.com/watch?v=VOTurAm_hUw",
-              "artist" : "",
-              "title" : "DESERT BREEZE SKATE PARK"
+              "artist" : "ENZO CAUTELA, TOMMY AND MORE",
+              "title" : "DESERT BREEZE SKATE PARK",
+              "terrain" : "park"
             },
             {
               "name" : "Desert West Skatepark",
@@ -266,8 +284,9 @@
               "city" : "Phoenix",
               "state" : "AZ",
               "video" : "https://www.youtube.com/watch?v=-VchA5WlWVY",
-              "artist" : "",
-              "title" : "LOCALS ONLY 2016 Presented by Converse CONS"
+              "artist" : "Presented by Converse CONS",
+              "title" : "LOCALS ONLY 2016",
+              "terrain" : "park"
             },
             {
               "name" : "Dreamland",
@@ -276,7 +295,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=wlL4NPOrYck",
               "artist" : "Bob Burnquist",
-              "title" : "Classics: 'Dreamland' Part"
+              "title" : "Classics: 'Dreamland' Part",
+              "terrain" : "park"
             },
             {
               "name" : "El Toro",
@@ -285,7 +305,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=Ofhz8VgQ6Ho",
               "artist" : "Jamie Foy",
-              "title" : "My War: Jamie Foy"
+              "title" : "My War",
+              "terrain" : "street"
             },
             {
               "name" : "Elliot Sloan Ramp",
@@ -294,7 +315,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=tvzMjE28E1g",
               "artist" : "ELLIOT SLOAN",
-              "title" : "BIRDHOUSE | SKATE AND CREATE 2020"
+              "title" : "BIRDHOUSE | SKATE AND CREATE 2020",
+              "terrain" : "park"
             },
             {
               "name" : "EMB",
@@ -303,7 +325,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=WNcTUT8khnI",
               "artist" : "James Kelch",
-              "title" : "The REAL Video '93"
+              "title" : "The REAL Video '93",
+              "terrain" : "street"
             },
             {
               "name" : "Encinitas YMCA Skatepark",
@@ -311,8 +334,9 @@
               "city" : "Encinitas",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=OBZFNfs7zX0",
-              "artist" : "",
-              "title" : "Paul Luc 540 at YMCA Skate Park Vert Ramp"
+              "artist" : "Paul Luc",
+              "title" : "540 at YMCA Skate Park Vert Ramp",
+              "terrain" : "park"
             },
             {
               "name" : "Etnies Skatepark",
