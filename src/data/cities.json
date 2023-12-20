@@ -86,6 +86,81 @@
         }
       ]
     },
+    { "name" : "America City",
+      "slug" : "america-city",
+      "country" : "USA",
+      "flag" : "us.png",
+      "type" : "megacity",
+      "year" : "2020",
+      "completed" : true,
+      "a1print" : true,
+      "cities" : [
+        {
+          "name" : "New York City",
+          "population" : "8,398,748",
+          "slug" : "new-york-city",
+          "video" : "https://www.youtube.com/watch?v=mVnoNpncfh0",
+          "artist" : "Lord Tariq, Peter Gunz",
+          "title" : "Déjà Vu (Uptown Baby)"
+        },
+        {
+          "name" : "Los Angeles",
+          "population" : "3,990,456",
+          "slug" : "los-angeles",
+          "video" : "https://www.youtube.com/watch?v=utsHQy3ywS8",
+          "artist" : "WC",
+          "title" : "This is Los Angeles"
+        },
+        {
+          "name" : "Chicago",
+          "population" : "2,705,994",
+          "slug" : "chicago",
+          "video" : "https://www.youtube.com/watch?v=Hu8PtiN0Ce8",
+          "artist" : "King Louie",
+          "title" : "Live & Die In Chicago"
+        },
+        {
+          "name" : "Houston",
+          "population" : "2,325,502",
+          "slug" : "houston",
+          "video" : "https://www.youtube.com/watch?v=dU-D4u9WIh8",
+          "artist" : "Slim Thug ft Paul Wall",
+          "title" : "Houston"
+        },
+        {
+          "name" : "Phoenix",
+          "population" : "1,660,272",
+          "slug" : "phoenix",
+          "video" : "https://www.youtube.com/watch?v=VlNqN118HSc",
+          "artist" : "K.A.A.N.",
+          "title" : "PHOENIX"
+        },
+        {
+          "name" : "Philadelphia",
+          "population" : "1,584,138",
+          "slug" : "philadelphia",
+          "video" : "https://www.youtube.com/watch?v=BsK-OxJQJP8",
+          "artist" : "Vinnie Paz",
+          "title" : "Cheesesteaks"
+        },
+        {
+          "name" : "San Antonio",
+          "population" : "1,532,233",
+          "slug" : "san-antonio",
+          "video" : "https://www.youtube.com/watch?v=-KB7JA4-Qcc",
+          "artist" : "San Antone Stand Up",
+          "title" : "B I-Double ft Isaac P and Yung Reese"
+        },
+        {
+          "name" : "San Diego",
+          "population" : "1,425,976",
+          "slug" : "san-diego",
+          "video" : "https://www.youtube.com/watch?v=CLAZInIGldw",
+          "artist" : "Stalker",
+          "title" : "SD Roll Call"
+        }
+      ]
+    },
     {  "name" : "Skate City",
           "slug" : "skate-city",
           "country" : "Skatica",
@@ -345,7 +420,8 @@
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=qMSXP9YAigA",
               "artist" : "Etnies Skatepark",
-              "title" : "15-year Anniversary"
+              "title" : "15-year Anniversary",
+              "terrain" : "park"
             },
             {
               "name" : "Far Rockaway Skatepark",
@@ -353,8 +429,9 @@
               "city" : "New York City",
               "state" : "NY",
               "video" : "https://www.youtube.com/watch?v=ETbMZ-N-P3A",
-              "artist" : "",
-              "title" : "Spohn Ranch talks about the new skatepark in Farrockaway on Beach 92nd street"
+              "artist" : "Spohn Ranch",
+              "title" : "talks about the new skatepark",
+              "terrain" : "park"
             },
             {
               "name" : "Foothills Skatepark",
@@ -362,8 +439,9 @@
               "city" : "Glendale",
               "state" : "AZ",
               "video" : "https://www.youtube.com/watch?v=9DYMP34OYLk",
-              "artist" : "",
-              "title" : "2014 Union Hills Classic Presented by DC"
+              "artist" : "DC",
+              "title" : "2014 Union Hills Classic",
+              "terrain" : "park"
             },
             {
               "name" : "Fort Miley",
@@ -371,8 +449,9 @@
               "city" : "San Francisco",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=--c_GXVcZ_0",
-              "artist" : "",
-              "title" : "Classics - Fort Miley - The Hip Is Hard"
+              "artist" : "Classics",
+              "title" : "The Hip Is Hard",
+              "terrain" : "street"
             },
             {
               "name" : "Foster City Skatepark",
@@ -380,8 +459,9 @@
               "city" : "Foster City",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=sYkghUIhuzI",
-              "artist" : "",
-              "title" : "Too Many Montages: Foster City"
+              "artist" : "Foster City",
+              "title" : "Too Many Montages",
+              "terrain" : "park"
             },
             {
               "name" : "Freemont Skatepark",
@@ -389,8 +469,9 @@
               "city" : "Freemont",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=yZJc12I-YX4&t=37s",
-              "artist" : "",
-              "title" : "VINNIE BANH DEMOLISHES FREMONT SKATEPARK"
+              "artist" : "VINNIE BANH",
+              "title" : "DEMOLISHES FREMONT SKATEPARK",
+              "terrain" : "park"
             },
             {
               "name" : "Freestone Skatepark",
@@ -398,8 +479,9 @@
               "city" : "Gilbert",
               "state" : "AZ",
               "video" : "https://www.youtube.com/watch?v=SBVSXg3IabE",
-              "artist" : "",
-              "title" : "Freestone Skatepark Montage"
+              "artist" : "Montage",
+              "title" : "Freestone Skatepark",
+              "terrain" : "park"
             },
             {
               "name" : "Garfield High School",
@@ -407,8 +489,9 @@
               "city" : "Seattle",
               "state" : "WA",
               "video" : "https://www.youtube.com/watch?v=BjN5W7364ac",
-              "artist" : "",
-              "title" : "SKATE Seattle with Jordan Sanchez"
+              "artist" : "Jordan Sanchez",
+              "title" : "SKATE Seattle",
+              "terrain" : "street"
             },
             {
               "name" : "Greer Skatepark",
@@ -416,8 +499,9 @@
               "city" : "Palo Alto",
               "state" : "CA",
               "video" : "https://www.youtube.com/watch?v=6wCpXu-u4Qc&t=104s",
-              "artist" : "",
-              "title" : "Tim Brauch & Phil Shao - One Day at Palo Alto Skatepark"
+              "artist" : "Tim Brauch & Phil Shao",
+              "title" : "One Day at Palo Alto Skatepark",
+              "terrain" : "street"
             },
             {
               "name" : "Hollywood High",
@@ -596,8 +680,9 @@
               "city" : "Washington",
               "state" : "DC",
               "video" : "https://www.youtube.com/watch?v=_SRZUmL-gH8",
-              "artist" : "",
-              "title" : "Plazacation: Pulaski"
+              "artist" : "Pulaski",
+              "title" : "Plazacation",
+              "terrain" : "street"
             },
             {
               "name" : "Roanoke Skatepark",

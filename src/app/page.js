@@ -9,6 +9,7 @@ const Home = () => {
 
         <Link href="/ar/skate-city">Skate City</Link>
         <Link href="/ar/deutsche-stadt">Deutsche Stadt</Link>
+        <Link href="/ar/america-city">America City</Link>
         
       </main>
   )
